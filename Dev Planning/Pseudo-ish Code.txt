@@ -1,0 +1,131 @@
+PseudoCode/Skeleton 
+
+#Import Neccessary Libraries
+import sys
+import requests
+import json
+import falcon
+import flask
+import logging
+import re
+from datetime import datetime
+
+from apixu.client import ApixuClient
+
+from apixu.client import ApixuException
+
+
+
+#Configure Logger 
+logging.basicConfig(filename='/Weather API Conflict/logs/applog.log', level=logging.DEBUG, format='%(asctime)s %(levelname)s %(name)s %(message)s')
+logger = logging.getLogger(__name__)
+
+
+
+#Example Call to OpenWeather API For Current Weather by City ID
+#https://api.openweathermap.org/data/2.5/weather?id=4671654&appid=0c9597524a3f445d77b02ccda4e6b577
+
+#Example Call to OpenWeather API For Current Weather by Zip
+#https://api.openweathermap.org/data/2.5/weather?zip=4671654&appid=0c9597524a3f445d77b02ccda4e6b577
+
+#For OpenWeather URL, replace "weather" with "forecast" to request forecast information
+
+#Example Call to OpenWeather API For Current Weather by Zip Code
+#https://api.openweathermap.org/data/2.5/weather?zip=78708,us&appid=0c9597524a3f445d77b02ccda4e6b577
+#https://api.openweathermap.org/data/2.5/forecast?zip=78708&appid=0c9597524a3f445d77b02ccda4e6b577
+
+#Need to return
+#    Location
+#    Current Temp For Today
+#    Forecasted Temp for tomorrow
+#    Current Condition (Cloudy, Windy, Sunny, Rainy...)
+#    Forecasted Condition for Tomorrow
+#    Sunrise & Sunset
+
+
+
+
+
+#Create Client Input Page For Weather Query
+class ForecastInput(object):
+    def on_get(self, req, resp):
+        clientlog = open('/Weather API Conflict/logs/accesslog.txt', "a")
+        resp.status = falcon.HTTP_200
+        resp.content_type = 'text/html'
+        
+        with open('chisweather.html', 'r') as f:
+            resp.body = f.read()
+
+
+        clientlog.write(XYZ Client Accessed Page) 
+        
+        
+        
+        
+		
+
+
+class GetTheWeather(object):
+
+    
+    def on_get(self, req, resp):
+        
+ 
+
+        #Alphabet list to check against client's state entry for proper weather API routing
+        
+        alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+                     'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'W', 'X', 'Y', 'Z']
+        alphabetlow = [letter.lower() for letter in alphabet] #using .lower method in case client enter state with lowercase letter 
+
+        
+        #get parameters from client
+        city = req.get_param('city')
+        zipcode = req.get_param('zip')
+        state = req.get_param('state')
+       
+       
+
+        Make sure inputs from client are valid before continuing
+        if (
+                re.match("^[A-Za-z ]+$", state)
+                ##regex for city and zipcode validation as well
+            ):
+
+
+            try:
+				
+				Check where first letter of state falls to begin routing to proper weather api
+                if (statebegins in alphabet[0:13]): #send client request to openweather API if state begins with A - M
+						(do requests magic)
+						(extract only weather attributes we care about)
+						(convert extraction back to JSON)
+						(send result to client)
+                    
+                elif(statebegins in alphabet[13:25]): #send client request to apixu API if state begins with N - Z
+						(do requests magic)
+						(extract only weather attributes we care about)
+						(convert extraction back to JSON)
+						(send result to client)
+                    
+                else: #respond with error if client enters invalid state i.e. first character is not a letter
+					(Notify client if the first letter of state is not valid)
+                    print('Error in parameters issued by client')
+                    resp.status = falcon.HTTP_406
+                    resp.body = 'You have entered an invalid State parameter.'
+            except Exception: #exception if neither APIs can be properly utilized and client inputs are valid
+                logger.error('Something major has gone wrong', exc_info=True)
+        else:
+			(Raise error and Notify client if at least one of their inputs are invalid)
+            resp.status = falcon.HTTP_406
+            logger.error('Client entered invalid parameters', exc_info=True)
+            #resp.body = 'Your input contains invalid characters.'
+            raise falcon.HTTPError('Bad request', 'Your input contains invalid characters.')
+
+			
+app = falcon.API()
+app.add_route('/GetTheWeather', GetTheWeather())
+app.add_route('/', ForecastInput() )
+
+
+

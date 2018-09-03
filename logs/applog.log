@@ -1,0 +1,289 @@
+2018-09-02 22:41:25,616 INFO LeWeather2logging Starting Weather forecast request to APIXU API
+2018-09-02 22:41:25,635 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-02 22:41:25,931 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/current.json?key=b8f9f07b62c7415fa8862117183108&q=77845 HTTP/1.1" 200 397
+2018-09-02 22:41:25,933 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-02 22:41:26,238 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/forecast.json?key=b8f9f07b62c7415fa8862117183108&q=77845&days=2 HTTP/1.1" 200 716
+2018-09-02 22:41:35,112 ERROR LeWeather2logging Client entered invalid parameters
+NoneType: None
+2018-09-02 22:41:46,419 ERROR LeWeather2logging Client entered invalid parameters
+NoneType: None
+2018-09-02 22:49:48,365 ERROR waitress Exception when serving /
+Traceback (most recent call last):
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\channel.py", line 338, in service
+    task.service()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 169, in service
+    self.execute()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 399, in execute
+    app_iter = self.channel.server.application(env, start_response)
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\falcon\api.py", line 244, in __call__
+    responder(req, resp, **params)
+  File "C:\Weather API Conflict\LeWeather2logging.py", line 61, in on_get
+    clientlog.write(datetime.datetime.now() + ' Forecast input page accessed')
+TypeError: unsupported operand type(s) for +: 'datetime.datetime' and 'str'
+2018-09-02 22:49:53,791 ERROR waitress Exception when serving /
+Traceback (most recent call last):
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\channel.py", line 338, in service
+    task.service()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 169, in service
+    self.execute()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 399, in execute
+    app_iter = self.channel.server.application(env, start_response)
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\falcon\api.py", line 244, in __call__
+    responder(req, resp, **params)
+  File "C:\Weather API Conflict\LeWeather2logging.py", line 61, in on_get
+    clientlog.write(datetime.datetime.now() + ' Forecast input page accessed')
+TypeError: unsupported operand type(s) for +: 'datetime.datetime' and 'str'
+2018-09-02 22:49:56,208 ERROR waitress Exception when serving /
+Traceback (most recent call last):
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\channel.py", line 338, in service
+    task.service()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 169, in service
+    self.execute()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 399, in execute
+    app_iter = self.channel.server.application(env, start_response)
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\falcon\api.py", line 244, in __call__
+    responder(req, resp, **params)
+  File "C:\Weather API Conflict\LeWeather2logging.py", line 61, in on_get
+    clientlog.write(datetime.datetime.now() + ' Forecast input page accessed')
+TypeError: unsupported operand type(s) for +: 'datetime.datetime' and 'str'
+2018-09-02 22:50:01,641 ERROR waitress Exception when serving /
+Traceback (most recent call last):
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\channel.py", line 338, in service
+    task.service()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 169, in service
+    self.execute()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 399, in execute
+    app_iter = self.channel.server.application(env, start_response)
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\falcon\api.py", line 244, in __call__
+    responder(req, resp, **params)
+  File "C:\Weather API Conflict\LeWeather2logging.py", line 61, in on_get
+    clientlog.write(datetime.datetime.now() + ' Forecast input page accessed')
+TypeError: unsupported operand type(s) for +: 'datetime.datetime' and 'str'
+2018-09-02 22:51:23,132 ERROR waitress Exception when serving /
+Traceback (most recent call last):
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\channel.py", line 338, in service
+    task.service()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 169, in service
+    self.execute()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 399, in execute
+    app_iter = self.channel.server.application(env, start_response)
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\falcon\api.py", line 244, in __call__
+    responder(req, resp, **params)
+  File "C:\Weather API Conflict\LeWeather2logging.py", line 58, in on_get
+    clientlog.write(datetime.datetime.now() + ' Forecast input page accessed')
+TypeError: unsupported operand type(s) for +: 'datetime.datetime' and 'str'
+2018-09-02 22:55:27,962 INFO LeWeather2logging Starting Weather forecast request to OpenWeather API
+2018-09-02 22:55:27,965 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.openweathermap.org
+2018-09-02 22:55:28,675 DEBUG urllib3.connectionpool https://api.openweathermap.org:443 "GET /data/2.5/weather?zip=77845&appid=0c9597524a3f445d77b02ccda4e6b577 HTTP/1.1" 200 447
+2018-09-02 22:55:28,678 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.openweathermap.org
+2018-09-02 22:55:29,114 DEBUG urllib3.connectionpool https://api.openweathermap.org:443 "GET /data/2.5/forecast?zip=77845&appid=0c9597524a3f445d77b02ccda4e6b577 HTTP/1.1" 200 13954
+2018-09-02 23:00:43,344 ERROR waitress Exception when serving /
+Traceback (most recent call last):
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\channel.py", line 338, in service
+    task.service()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 169, in service
+    self.execute()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 399, in execute
+    app_iter = self.channel.server.application(env, start_response)
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\falcon\api.py", line 244, in __call__
+    responder(req, resp, **params)
+  File "C:\Weather API Conflict\LeWeather2logging.py", line 62, in on_get
+    clientlog.write(' Forecast input page accessed')
+ValueError: I/O operation on closed file.
+2018-09-02 23:00:50,311 ERROR waitress Exception when serving /
+Traceback (most recent call last):
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\channel.py", line 338, in service
+    task.service()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 169, in service
+    self.execute()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 399, in execute
+    app_iter = self.channel.server.application(env, start_response)
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\falcon\api.py", line 244, in __call__
+    responder(req, resp, **params)
+  File "C:\Weather API Conflict\LeWeather2logging.py", line 62, in on_get
+    clientlog.write(' Forecast input page accessed')
+ValueError: I/O operation on closed file.
+2018-09-02 23:00:50,979 ERROR waitress Exception when serving /
+Traceback (most recent call last):
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\channel.py", line 338, in service
+    task.service()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 169, in service
+    self.execute()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 399, in execute
+    app_iter = self.channel.server.application(env, start_response)
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\falcon\api.py", line 244, in __call__
+    responder(req, resp, **params)
+  File "C:\Weather API Conflict\LeWeather2logging.py", line 62, in on_get
+    clientlog.write(' Forecast input page accessed')
+ValueError: I/O operation on closed file.
+2018-09-02 23:00:51,655 ERROR waitress Exception when serving /
+Traceback (most recent call last):
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\channel.py", line 338, in service
+    task.service()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 169, in service
+    self.execute()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 399, in execute
+    app_iter = self.channel.server.application(env, start_response)
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\falcon\api.py", line 244, in __call__
+    responder(req, resp, **params)
+  File "C:\Weather API Conflict\LeWeather2logging.py", line 62, in on_get
+    clientlog.write(' Forecast input page accessed')
+ValueError: I/O operation on closed file.
+2018-09-02 23:01:45,775 ERROR waitress Exception when serving /
+Traceback (most recent call last):
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\channel.py", line 338, in service
+    task.service()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 169, in service
+    self.execute()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 399, in execute
+    app_iter = self.channel.server.application(env, start_response)
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\falcon\api.py", line 244, in __call__
+    responder(req, resp, **params)
+  File "C:\Weather API Conflict\LeWeather2logging.py", line 62, in on_get
+    clientlog.write(' Forecast input page accessed')
+ValueError: I/O operation on closed file.
+2018-09-02 23:03:52,175 INFO LeWeather2logging Starting Weather forecast request to APIXU API
+2018-09-02 23:03:52,178 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-02 23:03:52,460 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/current.json?key=b8f9f07b62c7415fa8862117183108&q=77845 HTTP/1.1" 200 396
+2018-09-02 23:03:52,463 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-02 23:03:52,782 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/forecast.json?key=b8f9f07b62c7415fa8862117183108&q=77845&days=2 HTTP/1.1" 200 714
+2018-09-02 23:09:54,467 INFO LeWeather2logging Starting Weather forecast request to APIXU API
+2018-09-02 23:09:54,471 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-02 23:09:54,886 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/current.json?key=b8f9f07b62c7415fa8862117183108&q=77845 HTTP/1.1" 200 398
+2018-09-02 23:09:54,888 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-02 23:09:55,197 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/forecast.json?key=b8f9f07b62c7415fa8862117183108&q=77845&days=2 HTTP/1.1" 200 714
+2018-09-02 23:14:20,844 INFO LeWeather2logging Starting Weather forecast request to APIXU API
+2018-09-02 23:14:20,847 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-02 23:14:21,144 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/current.json?key=b8f9f07b62c7415fa8862117183108&q=77845 HTTP/1.1" 200 397
+2018-09-02 23:14:21,146 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-02 23:14:21,488 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/forecast.json?key=b8f9f07b62c7415fa8862117183108&q=77845&days=2 HTTP/1.1" 200 716
+2018-09-02 23:14:33,566 INFO LeWeather2logging Starting Weather forecast request to OpenWeather API
+2018-09-02 23:14:33,567 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.openweathermap.org
+2018-09-02 23:14:34,144 DEBUG urllib3.connectionpool https://api.openweathermap.org:443 "GET /data/2.5/weather?zip=77845&appid=0c9597524a3f445d77b02ccda4e6b577 HTTP/1.1" 200 535
+2018-09-02 23:14:34,146 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.openweathermap.org
+2018-09-02 23:14:34,637 DEBUG urllib3.connectionpool https://api.openweathermap.org:443 "GET /data/2.5/forecast?zip=77845&appid=0c9597524a3f445d77b02ccda4e6b577 HTTP/1.1" 200 13954
+2018-09-02 23:31:47,211 ERROR waitress Exception when serving /
+Traceback (most recent call last):
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\channel.py", line 338, in service
+    task.service()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 169, in service
+    self.execute()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 399, in execute
+    app_iter = self.channel.server.application(env, start_response)
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\falcon\api.py", line 244, in __call__
+    responder(req, resp, **params)
+  File "C:\Weather API Conflict\LeWeather2logging.py", line 65, in on_get
+    clientlog.write(str(datetime.now()) + ': Forecast input page accessed by client ' + req.access_route + '\n' + 'USER-AGENT: ' + req.get_header('USER-AGENT'))
+TypeError: must be str, not list
+2018-09-02 23:32:48,587 ERROR waitress Exception when serving /
+Traceback (most recent call last):
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\channel.py", line 338, in service
+    task.service()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 169, in service
+    self.execute()
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\waitress\task.py", line 399, in execute
+    app_iter = self.channel.server.application(env, start_response)
+  File "C:\Users\Ceze\AppData\Local\Programs\Python\Python36\lib\site-packages\falcon\api.py", line 244, in __call__
+    responder(req, resp, **params)
+  File "C:\Weather API Conflict\LeWeather2logging.py", line 65, in on_get
+    clientlog.write(str(datetime.now()) + ': Forecast input page accessed by client ' + req.access_route + '\n' + 'USER-AGENT: ' + str(req.get_header('USER-AGENT')))
+TypeError: must be str, not list
+2018-09-02 23:41:26,992 ERROR LeWeather2logging Client entered invalid parameters
+NoneType: None
+2018-09-02 23:42:33,460 INFO LeWeather2logging Starting Weather forecast request to APIXU API
+2018-09-02 23:42:33,464 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-02 23:42:33,889 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/current.json?key=b8f9f07b62c7415fa8862117183108&q=77845 HTTP/1.1" 200 394
+2018-09-02 23:42:33,891 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-02 23:42:34,175 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/forecast.json?key=b8f9f07b62c7415fa8862117183108&q=77845&days=2 HTTP/1.1" 200 710
+2018-09-02 23:43:26,964 INFO LeWeather2logging Starting Weather forecast request to APIXU API
+2018-09-02 23:43:26,968 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-02 23:43:27,325 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/current.json?key=b8f9f07b62c7415fa8862117183108&q=77845 HTTP/1.1" 200 391
+2018-09-02 23:43:27,326 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-02 23:43:27,619 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/forecast.json?key=b8f9f07b62c7415fa8862117183108&q=77845&days=2 HTTP/1.1" 200 710
+2018-09-02 23:43:31,421 ERROR LeWeather2logging Client entered invalid parameters
+NoneType: None
+2018-09-02 23:55:38,644 INFO LeWeather2logging Starting Weather forecast request to APIXU API
+2018-09-02 23:55:38,649 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-02 23:55:38,957 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/current.json?key=b8f9f07b62c7415fa8862117183108&q=77845 HTTP/1.1" 200 395
+2018-09-02 23:55:38,959 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-02 23:55:39,260 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/forecast.json?key=b8f9f07b62c7415fa8862117183108&q=77845&days=2 HTTP/1.1" 200 712
+2018-09-02 23:55:39,262 ERROR LeWeather2logging Something major has gone wrong
+Traceback (most recent call last):
+  File "C:\Weather API Conflict\LeWeather2logging.py", line 184, in on_get
+    #display weather information in client body
+AttributeError: 'str' object has no attribute 'tojson'
+2018-09-03 00:01:01,268 INFO LeWeather2logging Starting Weather forecast request to APIXU API
+2018-09-03 00:01:01,271 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 00:01:01,570 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/current.json?key=b8f9f07b62c7415fa8862117183108&q=77845 HTTP/1.1" 200 392
+2018-09-03 00:01:01,572 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 00:01:01,911 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/forecast.json?key=b8f9f07b62c7415fa8862117183108&q=77845&days=2 HTTP/1.1" 200 698
+2018-09-03 00:02:08,956 INFO LeWeather2logging Starting Weather forecast request to APIXU API
+2018-09-03 00:02:08,959 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 00:02:09,256 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/current.json?key=b8f9f07b62c7415fa8862117183108&q=77845 HTTP/1.1" 200 393
+2018-09-03 00:02:09,258 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 00:02:09,538 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/forecast.json?key=b8f9f07b62c7415fa8862117183108&q=77845&days=2 HTTP/1.1" 200 696
+2018-09-03 00:03:00,853 INFO LeWeather2logging Starting Weather forecast request to APIXU API
+2018-09-03 00:03:00,856 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 00:03:01,161 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/current.json?key=b8f9f07b62c7415fa8862117183108&q=77845 HTTP/1.1" 200 392
+2018-09-03 00:03:01,163 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 00:03:01,460 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/forecast.json?key=b8f9f07b62c7415fa8862117183108&q=77845&days=2 HTTP/1.1" 200 698
+2018-09-03 00:03:10,257 INFO LeWeather2logging Starting Weather forecast request to APIXU API
+2018-09-03 00:03:10,260 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 00:03:10,576 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/current.json?key=b8f9f07b62c7415fa8862117183108&q=77845 HTTP/1.1" 200 392
+2018-09-03 00:03:10,578 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 00:03:10,883 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/forecast.json?key=b8f9f07b62c7415fa8862117183108&q=77845&days=2 HTTP/1.1" 200 698
+2018-09-03 00:06:25,076 INFO LeWeather2logging Starting Weather forecast request to APIXU API
+2018-09-03 00:06:25,078 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 00:06:25,356 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/current.json?key=b8f9f07b62c7415fa8862117183108&q=77845 HTTP/1.1" 200 394
+2018-09-03 00:06:25,358 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 00:06:25,684 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/forecast.json?key=b8f9f07b62c7415fa8862117183108&q=77845&days=2 HTTP/1.1" 200 700
+2018-09-03 00:24:05,860 INFO LeWeather2logging Starting Weather forecast request to APIXU API
+2018-09-03 00:24:05,863 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 00:24:06,211 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/current.json?key=b8f9f07b62c7415fa8862117183108&q=77845 HTTP/1.1" 200 397
+2018-09-03 00:24:06,213 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 00:24:06,477 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/forecast.json?key=b8f9f07b62c7415fa8862117183108&q=77845&days=2 HTTP/1.1" 200 704
+2018-09-03 00:27:47,170 INFO LeWeather2logging Starting Weather forecast request to APIXU API
+2018-09-03 00:27:47,173 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 00:27:47,465 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/current.json?key=b8f9f07b62c7415fa8862117183108&q=77845 HTTP/1.1" 200 396
+2018-09-03 00:27:47,467 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 00:27:47,760 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/forecast.json?key=b8f9f07b62c7415fa8862117183108&q=77845&days=2 HTTP/1.1" 200 703
+2018-09-03 00:30:29,341 INFO LeWeather2logging Starting Weather forecast request to APIXU API
+2018-09-03 00:30:29,344 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 00:30:29,629 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/current.json?key=b8f9f07b62c7415fa8862117183108&q=77845 HTTP/1.1" 200 393
+2018-09-03 00:30:29,630 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 00:30:29,918 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/forecast.json?key=b8f9f07b62c7415fa8862117183108&q=77845&days=2 HTTP/1.1" 200 702
+2018-09-03 00:37:10,035 INFO LeWeather2logging Starting Weather forecast request to OpenWeather API
+2018-09-03 00:37:10,039 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.openweathermap.org
+2018-09-03 00:37:10,603 DEBUG urllib3.connectionpool https://api.openweathermap.org:443 "GET /data/2.5/weather?zip=77845&appid=0c9597524a3f445d77b02ccda4e6b577 HTTP/1.1" 200 441
+2018-09-03 00:37:10,607 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.openweathermap.org
+2018-09-03 00:37:11,063 DEBUG urllib3.connectionpool https://api.openweathermap.org:443 "GET /data/2.5/forecast?zip=77845&appid=0c9597524a3f445d77b02ccda4e6b577 HTTP/1.1" 200 13958
+2018-09-03 00:37:11,065 ERROR LeWeather2logging Something major has gone wrong
+Traceback (most recent call last):
+  File "C:\Weather API Conflict\LeWeather2logging.py", line 160, in on_get
+    jsonbodyow = {'Location': + wi['name'],
+TypeError: bad operand type for unary +: 'str'
+2018-09-03 00:38:09,306 INFO LeWeather2logging Starting Weather forecast request to OpenWeather API
+2018-09-03 00:38:09,309 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.openweathermap.org
+2018-09-03 00:38:09,737 DEBUG urllib3.connectionpool https://api.openweathermap.org:443 "GET /data/2.5/weather?zip=77845&appid=0c9597524a3f445d77b02ccda4e6b577 HTTP/1.1" 200 441
+2018-09-03 00:38:09,740 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.openweathermap.org
+2018-09-03 00:38:09,997 DEBUG urllib3.connectionpool https://api.openweathermap.org:443 "GET /data/2.5/forecast?zip=77845&appid=0c9597524a3f445d77b02ccda4e6b577 HTTP/1.1" 200 13958
+2018-09-03 00:38:47,610 INFO LeWeather2logging Starting Weather forecast request to OpenWeather API
+2018-09-03 00:38:47,611 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.openweathermap.org
+2018-09-03 00:38:47,886 DEBUG urllib3.connectionpool https://api.openweathermap.org:443 "GET /data/2.5/weather?zip=77845&appid=0c9597524a3f445d77b02ccda4e6b577 HTTP/1.1" 200 441
+2018-09-03 00:38:47,888 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.openweathermap.org
+2018-09-03 00:38:48,156 DEBUG urllib3.connectionpool https://api.openweathermap.org:443 "GET /data/2.5/forecast?zip=77845&appid=0c9597524a3f445d77b02ccda4e6b577 HTTP/1.1" 200 13958
+2018-09-03 01:54:39,364 INFO LeWeather2logging Starting Weather forecast request to APIXU API
+2018-09-03 01:54:39,367 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 01:54:39,730 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/current.json?key=b8f9f07b62c7415fa8862117183108&q=78708 HTTP/1.1" 200 383
+2018-09-03 01:54:39,732 DEBUG urllib3.connectionpool Starting new HTTP connection (1): api.apixu.com
+2018-09-03 01:54:44,801 DEBUG urllib3.connectionpool http://api.apixu.com:80 "GET /v1/forecast.json?key=b8f9f07b62c7415fa8862117183108&q=78708&days=2 HTTP/1.1" 200 670
+2018-09-03 02:06:28,961 INFO LeWeather2logging Starting Weather forecast request to OpenWeather API
+2018-09-03 02:06:28,964 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.openweathermap.org
+2018-09-03 02:06:29,637 DEBUG urllib3.connectionpool https://api.openweathermap.org:443 "GET /data/2.5/weather?zip=77845&appid=0c9597524a3f445d77b02ccda4e6b577 HTTP/1.1" 200 441
+2018-09-03 02:06:29,640 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.openweathermap.org
+2018-09-03 02:06:30,156 DEBUG urllib3.connectionpool https://api.openweathermap.org:443 "GET /data/2.5/forecast?zip=77845&appid=0c9597524a3f445d77b02ccda4e6b577 HTTP/1.1" 200 13589
+2018-09-03 02:14:26,363 INFO LeWeather2logging Starting Weather forecast request to OpenWeather API
+2018-09-03 02:14:26,365 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.openweathermap.org
+2018-09-03 02:14:26,813 DEBUG urllib3.connectionpool https://api.openweathermap.org:443 "GET /data/2.5/weather?zip=77845&appid=0c9597524a3f445d77b02ccda4e6b577 HTTP/1.1" 200 441
+2018-09-03 02:14:26,815 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): api.openweathermap.org
+2018-09-03 02:14:27,101 DEBUG urllib3.connectionpool https://api.openweathermap.org:443 "GET /data/2.5/forecast?zip=77845&appid=0c9597524a3f445d77b02ccda4e6b577 HTTP/1.1" 200 13589

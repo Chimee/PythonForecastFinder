@@ -1,0 +1,52 @@
+2018-09-02 23:11:32.128347: Forecast input page accessed
+2018-09-02 23:11:37.743936: Forecast input page accessed
+2018-09-02 23:14:15.324621: Forecast input page accessed
+2018-09-02 23:14:33.565220: Client requesting weather information for College Station, AR with zipcode of 778452018-09-02 23:23:17.875692: Forecast input page accessed
+2018-09-02 23:23:39.692217: Forecast input page accessed
+2018-09-02 23:25:44.340300: Forecast input page accessed
+2018-09-02 23:26:35.888386: Forecast input page accessed
+2018-09-02 23:33:35.796195: Forecast input page accessed by client ['127.0.0.1']
+USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.362018-09-02 23:35:49.435571: Forecast input page accessed by client ['127.0.0.1']
+USER-AGENT: None2018-09-02 23:36:02.337151: Forecast input page accessed by client ['127.0.0.1']
+USER-AGENT: None2018-09-02 23:36:35.611874: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.362018-09-02 23:37:15.781768: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-02 23:37:22.312281: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-02 23:41:24.069218: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-02 23:55:08.660300: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-03 00:37:10.034489: Client requesting weather information for College Station, ATX with zipcode of 778452018-09-03 00:38:09.306946: Client requesting weather information for College Station, ATX with zipcode of 778452018-09-03 00:38:47.610681: Client requesting weather information for College Station, AR with zipcode of 778452018-09-03 00:44:54.111554: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-03 01:02:55.064156: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-03 01:16:08.728560: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-03 01:16:42.876999: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-03 01:17:44.049590: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-03 01:18:32.528240: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-03 01:20:46.141341: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-03 01:20:59.481612: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-03 01:34:11.270004: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-03 01:42:14.255929: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-03 01:42:55.271010: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-03 01:47:37.783505: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-03 01:52:59.484565: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-03 01:54:38.952003: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-03 02:06:20.954227: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-03 02:06:28.960694: Client requesting weather information for College Station, AL with zipcode of 778452018-09-03 02:14:20.189417: Forecast input page accessed by client ['127.0.0.1']
+    USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-09-03 02:14:26.362711: Client requesting weather information for College Station, AL with zipcode of 77845

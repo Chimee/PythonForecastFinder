@@ -1,0 +1,3 @@
+2018-09-03 01:42:55.338828: Forecast Input Page Test Passed Page Title Assertion
+2018-09-03 01:43:11.647638: Forecast Input Page Test Failed Page Title Assertion
+2018-09-03 01:52:59.596266: Forecast Input Page Test Passed Page Title Assertion
