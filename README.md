@@ -58,7 +58,8 @@ Falcon App may be served by waitress using a terminal
 Navigate to url App is being served on to test API. 
 
 
+Alternatively, request to FalconWeather may be accomplished using curl in the terminal in the following manner:
 
+    curl -v "http://localhost:8080/GetTheWeather?city=Austin&state=TX&zip=78708"
 
-
-
+In the example above, note that the app is being served on port 8080 with city, state, and zip parameters equal to Austin, TX, and 78707 respectively. 
