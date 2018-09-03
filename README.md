@@ -30,6 +30,7 @@ Waitress used as WSGI Servr
 Client weather query routed to APIs at:
 
 https://openweathermap.org/api JSON (A-M)
+
 https://github.com/apixu/apixu-python JSON (N-W)
 
 Logging using Python Logging module as well as custom logging utilizing Python file write method
