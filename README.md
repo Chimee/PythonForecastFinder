@@ -41,6 +41,24 @@ Logging using Python Logging module as well as custom logging utilizing Python f
 Selenium Used For Testing
 -------------
 
-Still Under Development 
+Api test script: WeatherApiTest.py
+
+
+
+
+Usage
+-------------
+
+Falcon App may be served by waitress using a terminal
+
+.. code:: bash
+
+    python -m waitress FalconWeather:app
+    
+Navigate to url App is being served on to test API. 
+
+
+
+
 
 
