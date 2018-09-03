@@ -51,7 +51,7 @@ Usage
 
 Falcon App may be served by waitress using a terminal
 
-.. code:: bash
+
 
     python -m waitress FalconWeather:app
     
