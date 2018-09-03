@@ -49,9 +49,7 @@ Api test script: WeatherApiTest.py
 Usage
 -------------
 
-Falcon App may be served by waitress using a terminal
-
-
+Falcon App may be served by waitress using a terminal as follows:
 
     python -m waitress FalconWeather:app
     
