@@ -1,0 +1,26 @@
+Things to look into:
+
+
+API Logging best practices
+
+API Testing best practices 
+
+User input validation
+    • Check against invalid characters 
+    • City/State/Zip Cross Validation
+        • User can enter completely unrelated parameters as zip code has been determined to be more accurate method than city name
+        • Could zip code be used to validate City and State pair inputted? 
+            • Zip code database available at: http://federalgovernmentzipcodes.us/
+
+Errors to check for throughout service use:
+    • Client State input contains only letters
+
+
+Look into security vulnerabilities 
+    • Can client input anything malicious into html form?
+
+What parts of application can be separated into different files for readability and troubleshooting purposes?
+
+Rotational logging implementation?
+
+Integrating Selenium testing method with Falcon’s testing framework

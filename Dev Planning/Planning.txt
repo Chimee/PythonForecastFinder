@@ -1,0 +1,16 @@
+Project Completion Plan 
+    • Research both APIs and their usages
+        • Note known issues and limitations of each API
+    • Obtain access to APIs as necessary
+    • Successfully interface with both APIs manually 
+    • Create local python server-side API with static parameters to query weather apis
+    • Determine best way to get API query information from users
+    • Create user interface to local python api
+    • Determine input method to get user parameters
+    • How will program determine which API to route to? 
+    • Determine what errors/issues are possible and begin noting how they can be handled
+        • When utilizing City Search method of APIs, there may be multiple cities in specified country or US with same name. Consider alternate methods.  
+    • Determine Falcon API testing methods and proper tests to be run 
+        • Selenium for testing
+    • Write test scripts
+

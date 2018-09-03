@@ -1,0 +1,51 @@
+Notes and Issues:
+
+
+Requires API Key for access. Can be obtained for free. 
+Multiple data formats available 
+Current Weather Data:
+Data available in JSON, XML, HTML
+    • JSON is default format
+City can be called multiple ways:
+City Name:
+    • api.openweathermap.org/data/2.5/weather?q={city name}
+    • api.openweathermap.org/data/2.5/weather?q={city name},{country code}
+	*Use ISO3166 Country Codes
+City ID: (Recommended Method By Site)
+    • api.openweathermap.org/data/2.5/weather?id={cityid}
+	*City ID List available for download at http://bulk.openweathermap.org/sample/
+Geo Coordinates (Lat/Long):
+    • api.openweathermap.org/data/2.5/weather?lat=xx&lon=xxx
+Zip Code:
+    • api.openweathermap.org/data/2.5/weather?zip={zip code},{country code} 
+	*If country not specified, defaults to USA
+Limitations:
+    • API does not use State as a parameter
+        • Using city query potentially returns several results with common city names
+            ? Use Zip Code until accurate city input method determined 
+    • Daily Forecast API access is not free. 
+        • Using 5day/3hour forecast for forecast information
+    • Sunrise and Sunset data returns in Epoch time 
+        • Look into converting in Python
+
+
+
+APIXU Notes:
+Requires API Key For Access (Free)
+
+Query parameter can be entered as US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name.
+
+Python Library Available
+    • https://github.com/apixu/apixu-python
+NodeJS Library Available
+    • https://github.com/apixu/apixu-nodejs
+
+Current Weather Call Format:
+    • http://api.apixu.com/v1/current.json?key=###&q=xxx
+
+
+Forecast Weather Call Format:
+    • http://api.apixu.com/v1/forecast.json?key=###&q=xxx
+
+
+
