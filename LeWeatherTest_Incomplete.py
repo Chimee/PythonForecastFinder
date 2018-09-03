@@ -18,8 +18,8 @@ def test_one(): #Open main input page
         driver.get(base_url)
         assert "Chi's Forecast Finder" in driver.title
         testlog.write(str(datetime.now()) + ': Forecast Input Page Test Passed Page Title Assertion' + '\n') 
+
         testlog.close()
-        time.sleep(5)
         driver.quit()
         
     except Exception:
@@ -39,6 +39,7 @@ def test_two(): #Test API Response after proper input
     try:
         driver.get(base_url)
         assert "Chi's Forecast Finder" in driver.title
+
         #Find Input Fields and enter test parameters
         elem = driver.find_element_by_name("city")
         elem.send_keys(city)
@@ -48,6 +49,7 @@ def test_two(): #Test API Response after proper input
         elem.send_keys(zipcode)
         elem.send_keys(Keys.RETURN)
         time.sleep(5)
+
         #get response body element by name of pre
         elem=driver.find_element_by_tag_name("pre")
         datatest = elem.text
@@ -57,8 +59,7 @@ def test_two(): #Test API Response after proper input
 
         testlog.close()
         driver.quit()
-        #time.sleep(5)
-        #driver.quit()
+
     except Exception:
         testlog.write(str(datetime.now()) + ': Test_Two (Proper Input) Failed' + '\n') 
         testlog.close()
@@ -74,6 +75,7 @@ def test_three(): #Test API Response after invalid input
     try:
         driver.get(base_url)
         assert "Chi's Forecast Finder" in driver.title
+
         #Find Input Fields and enter test parameters
         elem = driver.find_element_by_name("city")
         elem.send_keys(city)
@@ -83,10 +85,12 @@ def test_three(): #Test API Response after invalid input
         elem.send_keys(zipcode)
         elem.send_keys(Keys.RETURN)
         time.sleep(5)
+
         #get response body element by name of pre
         elem=driver.find_element_by_tag_name("pre")
         datatest = elem.text
         print(datatest)
+
         #check for invalid characters message in response body
         assert("Your input contains invalid characters." in datatest)        
         testlog.write(str(datetime.now()) + ': Test_Three (Invalid Characters in input message) Passed' + '\n') 
@@ -117,18 +121,21 @@ def test_four(): #Test API Response For Proper Routing To OpenWeather API
         elem.send_keys(zipcode)
         elem.send_keys(Keys.RETURN)
         time.sleep(5)
+
         #get response body element by name of pre
         elem=driver.find_element_by_tag_name("pre")
         datatest = elem.text
         print(datatest)
+
+        #check for city test parameter in json response from api
         assert("Birmingham" in datatest)        
         testlog.write(str(datetime.now()) + ': Test_Four (Proper Routing To OpenWeather API) Passed' + '\n')
-        
+
         testlog.close()
-        #time.sleep(5)
         driver.quit()
     except Exception:
         testlog.write(str(datetime.now()) + ': Test_Four Failed' + '\n')
+
         testlog.close()
         driver.quit()
 
